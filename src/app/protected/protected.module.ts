@@ -4,9 +4,9 @@ import { HttpModule } from '@angular/http';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { ProtectedComponent } from './protected.component';
-import { AboutComponent } from '../about/about.component';
-import { ContactComponent } from '../contact/contact.component';
-import { ProfileComponent } from '../profile/profile.component';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
+import { ProfileComponent } from './profile/profile.component';
 
 
 export const routes: Routes = [

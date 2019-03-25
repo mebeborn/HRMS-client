@@ -5,12 +5,11 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { AUTH_PROVIDERS } from './auth.service';
-import { LoggedInGuard } from './logged-in.guard';
-import { LoggedOutGuard } from './logged-out.guard';
+import { AUTH_PROVIDERS } from './app_services/auth.service';
+import { LoggedInGuard } from './app_guards/logged-in.guard';
+import { LoggedOutGuard } from './app_guards/logged-out.guard';
 
-import { CheckUserGuard } from './checkUser.guard';
-import { CheckDevGuard } from './checkDev.guard';
+import { CheckDevGuard } from './app_guards/checkDev.guard';
 import { ProtectedComponent } from './protected/protected.component';
 import { routes as childRoutes, ProtectedModule } from './protected/protected.module';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
@@ -89,7 +88,7 @@ const routes: Routes = [
 
     ProtectedModule
   ],
-  providers: [AUTH_PROVIDERS, LoggedInGuard, LoggedOutGuard, CheckUserGuard, CheckDevGuard],
+  providers: [AUTH_PROVIDERS, LoggedInGuard, LoggedOutGuard, CheckDevGuard],
   bootstrap: [AppComponent]
 })
 
