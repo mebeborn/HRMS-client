@@ -1,0 +1,21 @@
+<div class="user-bar-info">
+  <app-user-image></app-user-image>
+  <div class="main-user-info">
+    <p>{{userinfo.name}} {{userinfo.surname}}</p>
+    <p>{{userinfo.position}}</p>
+  </div>
+  <!--<tag [var]=""></tag>-->
+  <!--<tag [var]=""></tag>-->
+  <!--<app-link-to-profil [managerInfo]="userinfo.managerName, userinfo.managerSurname"></app-link-to-profil>-->
+  <!--<app-link-to-profil [myDepartment]="userinfo.departament"></app-link-to-profil>-->
+
+  <div class="additional-info">
+    <p>My manager</p>
+    <p>{{userinfo.managerName}} {{userinfo.managerSurname}}</p>
+  </div>
+  <div class="additional-info">
+    <p>My department</p>
+    <p>{{userinfo.departament}}</p>
+  </div>
+</div>
+

@@ -1,0 +1,17 @@
+$textColor: #ffff;
+
+a {
+    border:0;
+    text-decoration:none;
+    color: $textColor;
+    font: 10px Arial, sans-serif;
+    font-weight: normal;
+    line-height: 20px;
+}
+
+.user-info__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: $textColor;
+}

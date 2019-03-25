@@ -1,0 +1,19 @@
+<nav class="navbar navbar-dark bg-primary p-0">
+  <div class="container-fluid">
+    <div class="col-3 d-flex">
+      <a href="javascript:void(0);"  (click) = "isActive =! isActive" ><img src='assets/img/navbar-menu-mob.png' alt="menu"></a>
+      <a href="#"><img src='assets/img/logo-mob.png' alt="main-page"></a>
+      <div class="hide-menu" [ngClass] = "{'active': isActive}">
+        <ul class="hide-menu__list">
+          <li class="hide-menu__item">upcoming tasks</li>
+          <li class="hide-menu__item">contact info</li>
+          <li class="hide-menu__item">my profile</li>
+          <li class="hide-menu__item">create user</li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-2 d-flex ml-auto">
+      <app-navbar-profile class="user-info"></app-navbar-profile>
+    </div>
+  </div>
+</nav>
